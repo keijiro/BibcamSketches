@@ -3,15 +3,17 @@
     {
       "name": "Keijiro",
       "url": "https://registry.npmjs.com",
-      "scopes": [ "jp.keijiro" ]
+      "scopes": [
+        "jp.keijiro"
+      ]
     }
   ],
   "dependencies": {
-    "com.unity.recorder": "4.0.0-pre.2",
-    "com.unity.render-pipelines.high-definition": "12.1.2",
+    "com.unity.recorder": "4.0.0-pre.3",
+    "com.unity.render-pipelines.high-definition": "12.1.6",
     "jp.keijiro.bibcam.timeline": "1.0.2",
     "jp.keijiro.bibcam.vfxgraph": "1.0.5",
-    "jp.keijiro.shadergraphassets": "1.0.6",
-    "jp.keijiro.vfxgraphassets": "1.0.8"
+    "jp.keijiro.shadergraphassets": "2.5.1",
+    "jp.keijiro.vfxgraphassets": "1.0.10"
   }
 }
