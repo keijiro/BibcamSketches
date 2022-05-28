@@ -9,7 +9,7 @@
     }
   ],
   "dependencies": {
-    "com.unity.recorder": "4.0.0-pre.3",
+    "com.unity.recorder": "4.0.0-pre.5",
     "com.unity.render-pipelines.high-definition": "12.1.6",
     "jp.keijiro.bibcam.timeline": "1.0.2",
     "jp.keijiro.bibcam.vfxgraph": "1.0.5",
