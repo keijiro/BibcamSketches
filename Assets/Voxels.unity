@@ -166,7 +166,7 @@ MonoBehaviour:
     - rid: 2373525193742090240
       type: {class: BibcamBackgroundPass, ns: Bibcam, asm: Assembly-CSharp}
       data:
-        m_Name: Custom Pass
+        m_Name: Bibcam Background
         enabled: 1
         targetColorBuffer: 0
         targetDepthBuffer: 0
@@ -176,9 +176,9 @@ MonoBehaviour:
         _decoder: {fileID: 1556319657}
         _demux: {fileID: 1556319656}
         _depthOffset: 0
-        _depthColor: {r: 1, g: 1, b: 1, a: 1}
+        _depthColor: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
         _stencilColor: {r: 1, g: 0, b: 0, a: 1}
-        _tint: {r: 1, g: 1, b: 1, a: 1}
+        _tint: {r: 0.13333334, g: 0, b: 0.051318236, a: 1}
         _shader: {fileID: 4800000, guid: 3f0e30593d9734eb0a016ea4acaa2f68, type: 3}
 --- !u!4 &192106049
 Transform:
@@ -275,7 +275,7 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
+  m_projectionMatrixMode: 0
   m_GateFitMode: 2
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
@@ -499,13 +499,15 @@ PlayableDirector:
   m_GameObject: {fileID: 2052181379}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 43accee3a9170401080218801263792e, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 66fdfc985f86149ada0c0c8d84b8a812, type: 2}
   m_InitialState: 1
   m_WrapMode: 1
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 8282493544293140444, guid: 43accee3a9170401080218801263792e, type: 2}
+    value: {fileID: 1556319652}
+  - key: {fileID: -8540237383871060704, guid: 66fdfc985f86149ada0c0c8d84b8a812, type: 2}
     value: {fileID: 1556319652}
   m_ExposedReferences:
     m_References: []
@@ -642,7 +644,10 @@ VisualEffect:
     m_Float:
       m_Array: []
     m_Vector2f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0.09902003, y: 4.951001}
+        m_Name: DepthRange
+        m_Overridden: 1
     m_Vector3f:
       m_Array: []
     m_Vector4f:
@@ -650,12 +655,34 @@ VisualEffect:
       - m_Value: {x: 0, y: 0, z: 0, w: 0}
         m_Name: ProjectionVector
         m_Overridden: 0
+      - m_Value: {x: -0.0023607016, y: 0.013256848, z: 0.6692021, w: 0.37642616}
+        m_Name: RayParams
+        m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
       m_Array: []
     m_Matrix4x4f:
-      m_Array: []
+      m_Array:
+      - m_Value:
+          e00: -0.9524802
+          e01: 0.12910527
+          e02: 0.27588636
+          e03: -13.824975
+          e10: 0.004248604
+          e11: 0.91127473
+          e12: -0.411777
+          e13: -0.9286914
+          e20: -0.30457085
+          e21: -0.39103732
+          e22: -0.86851966
+          e23: -83.47573
+          e30: 0
+          e31: 0
+          e32: 0
+          e33: 1
+        m_Name: InverseView
+        m_Overridden: 1
     m_AnimationCurve:
       m_Array: []
     m_Gradient:
@@ -664,7 +691,10 @@ VisualEffect:
       m_Array:
       - m_Value: {fileID: 0}
         m_Name: DepthMap
-        m_Overridden: 0
+        m_Overridden: 1
+      - m_Value: {fileID: 0}
+        m_Name: ColorMap
+        m_Overridden: 1
     m_Bool:
       m_Array: []
 --- !u!4 &2112914353
